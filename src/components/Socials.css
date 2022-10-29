@@ -1,0 +1,134 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #30333a;
+  font-family: arial;
+}
+
+.fa-dollar {
+  background-color: #e59500;
+}
+
+.fa-github {
+  background-color: #161b22;
+}
+
+.fa-twitch {
+  background-color: #5c16c5;
+}
+
+.fa-youtube {
+  background-color: #cc0000;
+}
+
+.fa-twitter {
+  background-color: #00aced;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background: #e59500;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition-duration: 0.4s;
+}
+
+ul li .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+}
+
+ul li.twitter {
+  background: #00aced;
+}
+
+ul li.instagram {
+  background: #bc2a8d;
+}
+
+ul li.github {
+  background: #161b22;
+}
+
+ul li.twitch {
+  background: #5c16c5;
+}
+
+ul li.youtube {
+  background: #cc0000;
+}
+
+ul li.github div.slider {
+background: #37393d;
+}
+
+ul li.twitch div.slider {
+  background: #a264ff;
+}
+
+ul li.twitter div.slider {
+  background: #7fd5f6;
+}
+
+ul li.youtube div.slider {
+  background: #ff644f;
+}
+
+.slider {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 51px;
+  width: 0px;
+  height: 50px;
+  background: #eebb5c;
+  border-radius: 3px;
+  transition: all 0.5s 0.3s ease;
+}
+
+.slider p {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+ul li:hover .slider {
+  width: 180px;
+  transition: all 0.5s ease;
+}
+
+ul li:hover .slider p {
+  opacity: 1;
+  transition: all 1s 0.2s ease;
+}
+
+@media (max-width: 700px) {
+  .slider {
+    visibility: hidden;
+  } 
+  li:hover {
+    opacity: 0.7 !important;
+  } 
+}

@@ -1,0 +1,5 @@
+@media (min-width: 700px) {
+    .container-socials {
+        box-shadow: rgb(113, 58, 119) 0px 20px 30px -10px;
+    }
+}
