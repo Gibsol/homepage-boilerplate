@@ -1,9 +1,10 @@
 import React from "react";
 import "./Socials.css";
+import Row from "react-bootstrap/Row";
 
 export default function Socials() {
   return (
-    <div id="social-media" className="row">
+    <Row id="social-media">
       <ul>
         <a href="#">
           <li class="youtube">
@@ -38,6 +39,6 @@ export default function Socials() {
           </li>
         </a>
       </ul>
-    </div>
+    </Row>
   );
 }
